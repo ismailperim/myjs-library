@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>MyJS - JavaScript Library Demo Page</title>
+    <script type="text/javascript" src="myjs-core-v1.0.0.js"></script>
+    <script type="text/javascript" src="myjs-ajax-v1.0.0.js"></script>
+    
+</head>
+<body>
+
+<div id="deneme"   >div#deneme</div>
+<div id="deneme2"  class="deneme" >div.deneme</div>
+<div id="deneme3"  class="deneme" onclick="alert('týklandý')" >.deneme1</div>
+<div id="deneme4"  class="deneme" >.deneme1</div>
+<span>span</span>
+<input type="text"/>
+<p id="deneme5">p#deneme5</p>
+<p id="deneme7" class='deneme'>p#deneme7.deneme</p>
+<p id="deneme8" class='deneme'>p#deneme8.deneme</p>
+<h2 id="deneme6">h2</h2>
+<div><p><span>span</span></p></div>
+
+<script type="text/javascript">
+function denemeBakalim()
+{
+    alert("deniyoruz");
+}
+
+//MyJS('').changeStyle('background','aqua');
+
+MyJS().ajax('a','a',{type:'text'});
+//MyJS('div#deneme').setEvent('click',denemeBakalim).callEvent('click');
+//MyJS('div#deneme').changeStyle('background','blue').setHtml('ddenenememe');
+//MyJS('div.deneme').changeStyle('color','red').setHtml('sddfdfg');
+//alert(MyJS('div#deneme').elements[0].innerHTML);
+//alert(MyJS(document.getElementsByTagName('P')).elements[0].innerHTML);
+//MyJS('.deneme').changeStyle('background','gray').setHtml('deneme ulan');
+//MyJS('span').changeStyle('background','yellow').setHtml('ddenenememe');
+//MyJS(':text').changeStyle('background','maroon').setHtml('ddenenememe');
+//MyJS('p#deneme5 h2 p.deneme').changeStyle('background','green').setHtml('ddenenememe');
+//MyJS('p#deneme5 h2#deneme6').changeStyle('background','green');
+</script>
+</body>
+
+</html>
